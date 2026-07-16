@@ -20,24 +20,25 @@ input.addEventListener("keydown", logKey);
 
 
 function logKey(e) {
-    log.textContent += `${e.code}`;
+    log.textContent += `${e.key}`;
 }
 
-//Form Event
+// Form Event
 
 function formEvent(){
 
 let form = document.getElementById("form");
-let log = document.getElementById("log2");
+let log = document.getElementById("log");
 
 function logSubmit(event) {
     log.textContent = `Form Submitted Completed: ${event.timeStamp}`;
     event.preventDefault();
 }
 
-form.addEventListener("sumbit", logSubmit);
+form.addEventListener("submit", logSubmit);
 
 }
+
 
 // Focus and blur events
 
@@ -46,11 +47,9 @@ let currency = document.getElementById('currencyInput');
 let currencyValue = parseInt(currency.value, 10);
 
 if (currencyValue >= 50) {
-    alert('Payment Comfirmed')
     currency.style.backgroundColor = 'green';
     console.log('Payment Comfirmed');
 } else {
-    alert('Not Enough Payment');
     currency.style.backgroundColor = 'red';
     console.log('Not Enough Payment');
 }
