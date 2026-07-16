@@ -1,0 +1,49 @@
+body{
+   background-color: cyan;
+   font-family: sans-serif;
+}
+
+p{
+    color: #000000;
+    text-align: center;
+}
+
+.hoverDiv{
+    background-color: blue;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #000;
+}
+
+
+header{
+    background-color: blue;
+    text-align: center;
+    height: 50px;
+}
+
+header h1{
+    text-align: center;
+}
+
+header p{
+    text-align: center;
+}
+
+footer{
+    background-color: blue;
+    text-align: center;
+    height: 50px;
+}
+
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+li{
+    list-style-type: none;
+}

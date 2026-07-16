@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+
+<h1>Event Lab 7</h1>
+<p>Made By: Smit Patel</p>
+
+</header>
+
+<br><br>
+
+<p>Mouse Events:</p>
+
+<div style="text-align: center;">
+
+ <div id="hoverDiv">
+     <button>Hover Me</button>
+ </div>
+
+<br>
+
+<p>Keyboard Event:</p>
+
+<div class="Keyboard">
+
+<input placeholder="Type Here">
+<p id="log"></p>
+
+</div>
+
+<p>Form events:</p>
+
+<div style="text-align: center;">
+
+<form id="form">
+    <label>Test field: <input type="text" /></label>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+<p id="log"></p>
+
+</div>
+
+<div style="text-align: center;">
+
+<p>Focus and blur events:</p>
+
+<label for="currencyInput">Enter your currency:</label>
+<input type="text" id="currencyInput" onblur="validateCurrency()">
+
+<p>Hint: $50 is over is the correct payment</p>
+
+</div>
+
+<p>Event delegation:</p>
+
+<div style="text-align: center;">
+
+<ul id="numList">
+    <li>Number 1</li>
+    <li>Number 2</li>
+    <li>Number 3</li>
+    <li>Number 4</li>
+</ul>
+
+</div>
+
+<footer>
+<p>&copy;2026 Smit Patel</p>
+</footer>
+
+</body>
+</html>
