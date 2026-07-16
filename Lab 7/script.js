@@ -22,3 +22,19 @@ input.addEventListener("keydown", logKey);
 function logKey(e) {
     log.textContent += `${e.code}`;
 }
+
+//Form Event
+
+function formEvent(){
+
+let form = document.getElementById("form");
+let log = document.getElementById("log2");
+
+function logSubmit(event) {
+    log.textContent = `Form Submitted Completed: ${event.timeStamp}`;
+    event.preventDefault();
+}
+
+form.addEventListener("sumbit", logSubmit);
+
+}
