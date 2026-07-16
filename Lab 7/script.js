@@ -38,3 +38,21 @@ function logSubmit(event) {
 form.addEventListener("sumbit", logSubmit);
 
 }
+
+
+function validateCurrency(){
+let currency = document.getElementById('currencyInput');
+let currencyValue = parseInt(currency.value, 10);
+
+if (currencyValue >= 50) {
+    alert('Payment Comfirmed')
+    currency.style.backgroundColor = 'green';
+    console.log('Payment Comfirmed');
+} else {
+    alert('Not Enough Payment');
+    currency.style.backgroundColor = 'red';
+    console.log('Not Enough Payment');
+}
+
+}
+    

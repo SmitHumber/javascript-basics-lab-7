@@ -19,6 +19,7 @@ p{
 header{
     background-color: blue;
     text-align: center;
+    height: 50px;
 }
 
 header h1{
@@ -29,3 +30,16 @@ header p{
     text-align: center;
 }
 
+footer{
+    background-color: blue;
+    text-align: center;
+    height: 50px;
+}
+
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
