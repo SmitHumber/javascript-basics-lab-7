@@ -39,6 +39,7 @@ form.addEventListener("sumbit", logSubmit);
 
 }
 
+// Focus and blur events
 
 function validateCurrency(){
 let currency = document.getElementById('currencyInput');
@@ -55,4 +56,17 @@ if (currencyValue >= 50) {
 }
 
 }
+
+// Event delegation:
+
+let list = document.getElementById('numList');
+
+list.addEventListener('click', function(event) {
+    
+    if (event.target.tagName === 'LI') {
+    alert('You clicked: ' + event.target.textContent);
+                
+    event.target.style.backgroundColor = 'limegreen';
+    }
+});
     

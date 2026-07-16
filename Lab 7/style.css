@@ -43,3 +43,7 @@ footer p{
     align-items: center;
     height: 45px;
 }
+
+li{
+    list-style-type: none;
+}
